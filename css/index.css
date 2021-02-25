@@ -1,0 +1,152 @@
+#top-menu .bg-dark{
+    background-color: #121212 !important;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{
+    color: #000;
+}
+
+#top-menu .video-icon{
+    color: #DC3545;
+    border-radius: 15%;
+    padding: 2px;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: white;
+}
+time{
+    position: absolute;
+    bottom: 160px;
+    left: 265px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 0px 3px;
+    font-size: 13px;
+}
+.card .fa-play{
+    position: absolute;
+    top: 23%;
+    right: 45%;
+    color: #121212;
+    display: none;
+}
+.card:hover .fa-play{
+    display: inline;
+}
+.card:hover{
+    transform: translateY(-.9%);
+}
+.card{
+    transition: transform .2s;
+}
+.card .card-title{
+    height: 50px;
+    overflow: hidden;
+}
+.card .card-img-top{
+    height: 135px !important;
+    overflow: hidden !important;
+}
+
+#top-menu .fa-bars{
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 4;
+    left: -20rem;
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 45px;
+}
+.sidebar:hover{
+    overflow-y: scroll;
+}
+.sidebar .listGroup{
+    color: #DC3545;
+}
+.sidebar .list-group-item:hover{
+    color: #fff;
+    background-color: #DC3545;
+}
+.sidebar .list-group-item:hover .listGroup{
+    color: #121212;
+}
+.sidebar .list-group-item{
+    width: 17rem;
+    color: #fff;
+    background-color: #121212;
+}
+
+#wrap.toggled .sidebar{
+    left: 0rem;
+}
+.sidebar::-webkit-scrollbar{
+    background-color: rgb(228, 228, 228);
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: rgb(196, 196, 196);
+    width: 8px;
+}
+.shadow{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.425);
+    z-index: 3;
+    display: none;
+}
+.navbar .search-icon{
+    color: #DC3545;
+    cursor: pointer;
+    padding: 15px 10px;
+    position:absolute; /* test this if you have problem */
+    top: 5px;
+    right: 75px;
+    display: none;
+}
+.navbar .search-icon:hover{
+    color: #fff;
+    border-radius: 10px;
+    background-color: #DC3545;
+}
+.search-input{
+    position: fixed;
+    top: 57px;
+    border: none;
+    padding: 6px 23px;
+    height: 50px;
+    right: 60px;
+    width: 400px;
+    background-color: #121212;
+    display: none;
+    z-index: 1;
+    color: whitesmoke;
+}
+.search-input:focus{
+    background-color: #121212;
+    color: whitesmoke;
+}
+@media (max-width: 991px){
+    .navbar .collapse .form-inline{
+        display: none;
+    }
+    .navbar .search-icon{
+        display: inline;
+    }
+}
+@media (min-width: 991px){
+    .search-input{
+        display: none !important;
+    }
+}
